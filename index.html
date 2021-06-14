@@ -1,0 +1,260 @@
+<html>
+<head>
+<script type="text/javascript" src="node.js"></script>
+<style>
+     label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+select{
+  height: 50px;
+}
+input{
+  height:50px;
+}
+label {
+    margin: .4rem 0;
+}
+
+footer{
+  justify-items: center;
+  
+}
+tr{
+    font-size:25px;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: bolder;
+  color: beige;
+
+ 
+text-align: center;
+justify-items: center;
+background-color: rgb(3, 3, 34);
+}
+
+  
+
+img{
+  margin-top: 20%;
+}
+</style>
+<body>
+<form action="#" name="StudentRegistration" onsubmit="return(validate());">
+
+<table cellpadding="5" width="40%" bgcolor="" align="center" "
+cellspacing="12">
+
+<tr>
+<td colspan=2>
+<center><font size=16><b>Student Registration Form</b></font></center>
+<center><img src="images.jpg" alt=""></center><br><br>
+</td>
+</tr>
+<tr>
+    <td>Name</td>
+    <td><input type=text name=textnames id="textname" size="30"></td>
+    </tr>
+    
+    <tr>
+    <td>Father Name</td>
+    <td><input type="text" name="fathername" id="fathername"
+    size="30"></td>
+    </tr>
+    <tr>
+    <td>Postal Address</td>
+    <td><input type="text" name="paddress" id="paddress" size="30"></td>
+    </tr>
+    
+    <tr>
+    <td>Personal Address</td>
+    <td><input type="text" name="personaladdress"
+    id="personaladdress" size="30"></td>
+    </tr>
+    
+    <tr>
+    <td>Gender</td>
+    <td><input type="radio" name="sex" value="male" size="10">Male
+    <input type="radio" name="sex" value="Female" size="10">Female</td>
+    </tr>
+    <tr>
+        <td>Date of Birth</td>
+        <td><label for="start">Start date:</label>
+      
+          <input type="date" id="start" name="trip-start"
+                 value=""
+                 min="" max="">
+          </td>
+      </tr>
+    <tr>
+        <td>City</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>District</td>
+        <td>
+        <input type="text">
+        </td>
+        <tr>
+            <td>State</td>
+            <td>
+                <select name="state" id="state" class="form-control">
+                    <option value="">select</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    </select>
+            </td>
+              
+    <tr>
+        <td>PinCode</td>
+        <td><input type="text" name="pincode" id="pincode" size="30"></td>
+        
+        </tr>
+        <tr>
+            <td>EmailId</td>
+            <td><input type="text" name="emailid" id="emailid" size="30"></td>
+            </tr>
+            <tr>
+                <td>MobileNo</td>
+                <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                    Enter Board (High-school) </td>
+                    <td><input type="text" name="board" id="board" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>High-school Percentage</td>
+                        <td><input type="text" name="per1" id="pr1" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Enter Board  (Entermediate)</td>
+                            <td><input type="text" name="board2" id="board2" size="30"></td>
+                            </tr>
+                            <tr>
+                                <td>Entermediate Percentage</td>
+                                <td><input type="text" name="per2" id="per2" size="30"></td>
+                                </tr>           
+        <tr>
+            <td>Course</td>
+            <td><select name="Course">
+              <option value="-1" selected>select..</option>
+              <option value="CsE">B.TECH,Computer Science and Engineering</option>
+              <option value="ME">B.Tech,Machanical Engineering</option>
+              <option value="CE">B.Tech,Civil Engineering</option>
+              <option value="EE">B.Tech,Electrical Engineering</option>
+              <option value="AG">Becholer in Agriculture</option>
+              <option value="BT">Bio.Tech</option>
+              <option value="DP">Diploma</option>
+            </select></td>
+            </tr>
+   
+            <tr>
+                <td>Course Year</td>
+                <td><select name="Courseyear">
+                  <option value="-1" selected>select..</option>
+                  <option value="1">New Addmision</option>
+                  
+                  <option value="2">
+                    
+                      Lateral Student </option>
+                  
+                  
+                </select></td>
+                </tr>
+                <tr>
+                    <td>Enter year</td>
+                  <td><select name="lateral" id="">
+                    <option value="-1" selected>select..</option>
+                    <option value="1">1st year</option>
+                    <option value="2">2nd year</option>
+                    <option value="3">3rd year</option>
+                    <option value="4">4th year </option></select>
+                  
+                </td>
+                </tr>
+            
+             
+            
+             
+                       
+          
+       
+          </form>
+         
+        </table>
+    </form>
+   <br><br>
+    <footer>
+    
+      <form action="upload.php" method="post" enctype="multipart/form-data">Upload High School Marksheet: <br>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit">
+        </form>
+    <br><br>       <form action="upload.php" method="post" enctype="multipart/form-data">Upload Your Intermediate Marksheet:<br>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+            </form>
+         <br>  <form action="upload.php" method="post" enctype="multipart/form-data">Upload your Adhar Card: <br>
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+  
+                </form><br><br>
+                <form action="upload.php" method="post" enctype="multipart/form-data">Upload your TC: <br>
+                  <input type="file" name="fileToUpload" id="fileToUpload">
+                  <input type="submit" value="Upload Image" name="submit"></form><br><br>
+                <form action="upload.php" method="post" enctype="multipart/form-data">If you are a lateral student please upload previous year documents.<br>
+                  <input type="file" name="fileToUpload" id="fileToUpload">
+                  <input type="submit" value="Upload Image" name="submit"></form>
+                  <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="Upload Image" name="submit"></form><br><br>
+                <tr>
+                  <td><input type="reset"></td>
+                  <td colspan="2"><input type="submit" value="Submit Form" /></td>
+                  </tr>
+                </footer>
+                
+            
+    
+ 
+
+   
+</body>
+</html>
